@@ -1,0 +1,46 @@
+.kitchen-page {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: var(--space-5) var(--space-4);
+}
+
+.tabs {
+	display: flex;
+	gap: var(--space-2);
+	margin-bottom: var(--space-4);
+}
+
+.tabs button {
+	background: var(--surface);
+	border: 1px solid var(--border);
+	border-radius: 999px;
+	padding: var(--space-2) var(--space-4);
+	font-family: var(--font-body);
+	font-weight: 500;
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.tabs button:hover {
+	border-color: var(--accent);
+	color: var(--accent);
+}
+
+.tabs button.active-tab {
+	background: var(--accent);
+	border-color: var(--accent);
+	color: white;
+}
+
+#new-recipe {
+	background-color: var(--success);
+  color: white;
+}
+
+#new-recipe:hover {
+  background-color:white;
+  color:  var(--success);
+	border-color: var(--success);
+}

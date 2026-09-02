@@ -1,0 +1,1248 @@
+{
+  "users": [
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "password": "1234",
+      "favoriteRecipes": [],
+      "likedRecipes": [],
+      "id": "1"
+    },
+    {
+      "name": "Test User 2",
+      "email": "t@example.com",
+      "password": "1234",
+      "favoriteRecipes": [],
+      "likedRecipes": [],
+      "id": "2"
+    },
+    {
+      "name": "Bereket Muluken",
+      "email": "bereketmuluken0@gmail.com",
+      "password": "345",
+      "favoriteRecipes": [
+        "1",
+        "6",
+        "733",
+        "2"
+      ],
+      "likedRecipes": [
+        "McTnc_J5Arw",
+        "4",
+        "24",
+        "1",
+        "TRj3nk10tNQ"
+      ],
+      "id": "wn33gO87dBQ"
+    },
+    {
+      "name": "beka",
+      "email": "beka",
+      "password": "123",
+      "favoriteRecipes": [],
+      "likedRecipes": [],
+      "id": "nQ-HXSV0SmU"
+    },
+    {
+      "name": "betyy",
+      "email": "b@gmail.com",
+      "password": "123",
+      "favoriteRecipes": [],
+      "likedRecipes": [],
+      "id": "Gmc0jhkP7X4"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta with egg and pancetta",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/5807020/pexels-photo-5807020.jpeg",
+      "ingredients": [
+        "spaghetti",
+        "eggs",
+        "pancetta",
+        "parmesan"
+      ],
+      "instructions": [
+        "Boil spaghetti until al dente",
+        "Fry pancetta until crispy",
+        "Whisk eggs with parmesan",
+        "Combine pasta, pancetta, and egg mixture off heat"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 1,
+      "isPublic": true
+    },
+    {
+      "id": "2",
+      "title": "Avocado Toast",
+      "description": "Simple breakfast with smashed avocado",
+      "category": "Breakfast",
+      "image": "https://images.pexels.com/photos/6955642/pexels-photo-6955642.jpeg",
+      "ingredients": [
+        "bread",
+        "avocado",
+        "salt",
+        "lemon"
+      ],
+      "instructions": [
+        "Toast the bread",
+        "Mash avocado with salt and lemon",
+        "Spread onto toast"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 0,
+      "isPublic": true
+    },
+    {
+      "id": "3",
+      "title": "Greek Salad",
+      "description": "Fresh salad with feta and olives",
+      "category": "Lunch",
+      "image": "https://images.pexels.com/photos/38164817/pexels-photo-38164817.jpeg",
+      "ingredients": [
+        "cucumber",
+        "tomato",
+        "feta",
+        "olives"
+      ],
+      "instructions": [
+        "Chop cucumber and tomato",
+        "Combine with feta and olives",
+        "Drizzle with olive oil"
+      ],
+      "userId": 1,
+      "likeCount": 0,
+      "isPublic": true
+    },
+    {
+      "id": "4",
+      "title": "Chicken Stir-Fry",
+      "description": "Quick and healthy weeknight dinner with vegetables",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/24738507/pexels-photo-24738507.jpeg",
+      "ingredients": [
+        "chicken breast",
+        "broccoli",
+        "soy sauce",
+        "garlic",
+        "ginger"
+      ],
+      "instructions": [
+        "Cut chicken into strips",
+        "Stir-fry chicken until cooked through",
+        "Add broccoli, garlic, and ginger",
+        "Add soy sauce and cook 2 more minutes"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 0,
+      "isPublic": true
+    },
+    {
+      "id": "5",
+      "title": "Fluffy Pancakes",
+      "description": "Classic homemade pancakes served with syrup",
+      "category": "Breakfast",
+      "image": "https://images.pexels.com/photos/4306479/pexels-photo-4306479.jpeg",
+      "ingredients": [
+        "flour",
+        "milk",
+        "egg",
+        "butter",
+        "maple syrup"
+      ],
+      "instructions": [
+        "Whisk flour, milk, and egg into a batter",
+        "Melt butter in a pan",
+        "Pour batter and cook until bubbles form, then flip",
+        "Serve with maple syrup"
+      ],
+      "userId": 1,
+      "likeCount": 0,
+      "isPublic": true
+    },
+    {
+      "id": "6",
+      "title": "Turkey Club Wrap",
+      "description": "Easy layered lunch wrap with sliced turkey and bacon",
+      "category": "Lunch",
+      "image": "https://images.pexels.com/photos/5175629/pexels-photo-5175629.jpeg",
+      "ingredients": [
+        "tortilla wrap",
+        "sliced turkey",
+        "bacon",
+        "lettuce",
+        "mayonnaise"
+      ],
+      "instructions": [
+        "Lay out the tortilla wrap",
+        "Layer turkey, bacon, and lettuce",
+        "Spread mayonnaise and roll tightly"
+      ],
+      "userId": 1,
+      "likeCount": 0,
+      "isPublic": true
+    },
+    {
+      "id": "278",
+      "title": "Classic Pancakes",
+      "description": "Fluffy breakfast pancakes made from scratch",
+      "category": "Breakfast",
+      "image": "https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg",
+      "ingredients": [
+        "flour",
+        "milk",
+        "eggs",
+        "baking powder",
+        "butter"
+      ],
+      "instructions": [
+        "Mix dry ingredients",
+        "Whisk in milk and eggs",
+        "Cook on griddle until bubbles form",
+        "Flip and cook other side"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 15,
+      "isPublic": true
+    },
+    {
+      "id": "333",
+      "title": "Caesar Salad",
+      "description": "Crisp romaine with creamy dressing and croutons",
+      "category": "Salad",
+      "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+      "ingredients": [
+        "romaine lettuce",
+        "parmesan",
+        "croutons",
+        "caesar dressing",
+        "black pepper"
+      ],
+      "instructions": [
+        "Chop romaine lettuce",
+        "Toss with dressing",
+        "Top with parmesan and croutons",
+        "Season with pepper"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 8,
+      "isPublic": true
+    },
+    {
+      "id": "433",
+      "title": "Tomato Basil Soup",
+      "description": "Comforting soup with fresh basil",
+      "category": "Soup",
+      "image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "ingredients": [
+        "tomatoes",
+        "basil",
+        "cream",
+        "garlic",
+        "onion"
+      ],
+      "instructions": [
+        "Saute onion and garlic",
+        "Add tomatoes and simmer",
+        "Blend until smooth",
+        "Stir in cream and basil"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 43,
+      "isPublic": true
+    },
+    {
+      "id": "533",
+      "title": "Chocolate Chip Cookies",
+      "description": "Classic chewy cookies with melted chocolate",
+      "category": "Dessert",
+      "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      "ingredients": [
+        "flour",
+        "butter",
+        "brown sugar",
+        "chocolate chips",
+        "eggs"
+      ],
+      "instructions": [
+        "Cream butter and sugar",
+        "Mix in eggs",
+        "Fold in flour and chocolate chips",
+        "Bake at 350F for 10 minutes"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 5,
+      "isPublic": true
+    },
+    {
+      "id": "633",
+      "title": "Beef Tacos",
+      "description": "Seasoned beef tacos with fresh toppings",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg",
+      "ingredients": [
+        "ground beef",
+        "taco shells",
+        "lettuce",
+        "cheese",
+        "salsa"
+      ],
+      "instructions": [
+        "Brown the beef with seasoning",
+        "Warm taco shells",
+        "Fill shells with beef",
+        "Top with lettuce, cheese, salsa"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 27,
+      "isPublic": true
+    },
+    {
+      "id": "8",
+      "title": "Vegetable Curry",
+      "description": "Hearty vegan curry with coconut milk",
+      "category": "Vegan",
+      "image": "https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg",
+      "ingredients": [
+        "potatoes",
+        "carrots",
+        "coconut milk",
+        "curry powder",
+        "peas"
+      ],
+      "instructions": [
+        "Saute vegetables",
+        "Add curry powder",
+        "Pour in coconut milk and simmer",
+        "Stir in peas before serving"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 13,
+      "isPublic": true
+    },
+    {
+      "id": "9",
+      "title": "Margherita Pizza",
+      "description": "Classic pizza with tomato, mozzarella, and basil",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1352270/pexels-photo-1352270.jpeg",
+      "ingredients": [
+        "pizza dough",
+        "tomato sauce",
+        "mozzarella",
+        "basil",
+        "olive oil"
+      ],
+      "instructions": [
+        "Roll out the dough",
+        "Spread tomato sauce",
+        "Top with mozzarella",
+        "Bake and garnish with basil"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 32,
+      "isPublic": true
+    },
+    {
+      "id": "10",
+      "title": "Greek Yogurt Parfait",
+      "description": "Layered yogurt with granola and berries",
+      "category": "Breakfast",
+      "image": "https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg",
+      "ingredients": [
+        "greek yogurt",
+        "granola",
+        "honey",
+        "mixed berries",
+        "mint"
+      ],
+      "instructions": [
+        "Layer yogurt in a glass",
+        "Add a layer of granola",
+        "Top with berries",
+        "Drizzle with honey"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 1,
+      "isPublic": true
+    },
+    {
+      "id": "11",
+      "title": "Grilled Salmon",
+      "description": "Herb-crusted salmon with a crispy skin",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      "ingredients": [
+        "salmon fillet",
+        "lemon",
+        "dill",
+        "olive oil",
+        "garlic"
+      ],
+      "instructions": [
+        "Season salmon with herbs",
+        "Heat oil in pan",
+        "Grill skin-side down until crisp",
+        "Finish with lemon juice"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 12,
+      "isPublic": true
+    },
+    {
+      "id": "12",
+      "title": "Mushroom Risotto",
+      "description": "Creamy Italian rice dish with mushrooms",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/357737/pexels-photo-357737.jpeg",
+      "ingredients": [
+        "arborio rice",
+        "mushrooms",
+        "parmesan",
+        "white wine",
+        "vegetable stock"
+      ],
+      "instructions": [
+        "Saute mushrooms and set aside",
+        "Toast rice then add wine",
+        "Add stock gradually, stirring",
+        "Stir in mushrooms and parmesan"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 26,
+      "isPublic": true
+    },
+    {
+      "id": "13",
+      "title": "Banana Bread",
+      "description": "Moist banana bread perfect for breakfast",
+      "category": "Baking",
+      "image": "https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg",
+      "ingredients": [
+        "bananas",
+        "flour",
+        "sugar",
+        "eggs",
+        "baking soda"
+      ],
+      "instructions": [
+        "Mash the bananas",
+        "Mix wet and dry ingredients",
+        "Pour into loaf pan",
+        "Bake at 350F for 50 minutes"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 28,
+      "isPublic": true
+    },
+    {
+      "id": "14",
+      "title": "Spring Rolls",
+      "description": "Fresh Vietnamese-style rice paper rolls",
+      "category": "Appetizer",
+      "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+      "ingredients": [
+        "rice paper",
+        "shrimp",
+        "lettuce",
+        "vermicelli noodles",
+        "mint"
+      ],
+      "instructions": [
+        "Soak rice paper until soft",
+        "Layer fillings in center",
+        "Roll tightly",
+        "Serve with dipping sauce"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 17,
+      "isPublic": true
+    },
+    {
+      "id": "15",
+      "title": "Lentil Soup",
+      "description": "Nutritious and filling vegan lentil soup",
+      "category": "Soup",
+      "image": "https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg",
+      "ingredients": [
+        "lentils",
+        "carrots",
+        "celery",
+        "onion",
+        "cumin"
+      ],
+      "instructions": [
+        "Saute onion, carrot, celery",
+        "Add lentils and spices",
+        "Pour in stock and simmer",
+        "Blend partially for texture"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 10,
+      "isPublic": true
+    },
+    {
+      "id": "17",
+      "title": "Apple Crisp",
+      "description": "Warm baked apples with a crunchy oat topping",
+      "category": "Dessert",
+      "image": "https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg",
+      "ingredients": [
+        "apples",
+        "oats",
+        "brown sugar",
+        "cinnamon",
+        "butter"
+      ],
+      "instructions": [
+        "Slice apples into baking dish",
+        "Mix oats, sugar, cinnamon, butter",
+        "Sprinkle topping over apples",
+        "Bake until golden and bubbly"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 9,
+      "isPublic": true
+    },
+    {
+      "id": "18",
+      "title": "Shrimp Scampi",
+      "description": "Garlicky shrimp pasta in white wine sauce",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg",
+      "ingredients": [
+        "shrimp",
+        "linguine",
+        "garlic",
+        "white wine",
+        "butter"
+      ],
+      "instructions": [
+        "Cook linguine until al dente",
+        "Saute garlic in butter",
+        "Add shrimp and cook through",
+        "Toss with pasta and wine sauce"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 21,
+      "isPublic": true
+    },
+    {
+      "id": "19",
+      "title": "Stuffed Bell Peppers",
+      "description": "Peppers stuffed with rice and vegetables",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg",
+      "ingredients": [
+        "bell peppers",
+        "rice",
+        "black beans",
+        "corn",
+        "cheese"
+      ],
+      "instructions": [
+        "Hollow out bell peppers",
+        "Mix rice, beans, and corn",
+        "Stuff peppers with mixture",
+        "Bake topped with cheese"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 5,
+      "isPublic": true
+    },
+    {
+      "id": "21",
+      "title": "French Toast",
+      "description": "Golden brown egg-battered toast",
+      "category": "Breakfast",
+      "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      "ingredients": [
+        "bread",
+        "eggs",
+        "milk",
+        "cinnamon",
+        "maple syrup"
+      ],
+      "instructions": [
+        "Whisk eggs, milk, and cinnamon",
+        "Dip bread slices in mixture",
+        "Cook on griddle until golden",
+        "Serve with maple syrup"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 22,
+      "isPublic": true
+    },
+    {
+      "id": "22",
+      "title": "Beef Chili",
+      "description": "Hearty chili with beans and spices",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "ingredients": [
+        "ground beef",
+        "kidney beans",
+        "tomatoes",
+        "chili powder",
+        "onion"
+      ],
+      "instructions": [
+        "Brown beef with onion",
+        "Add spices and tomatoes",
+        "Stir in beans",
+        "Simmer for 30 minutes"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 16,
+      "isPublic": true
+    },
+    {
+      "id": "23",
+      "title": "Caprese Salad",
+      "description": "Simple salad with tomato, mozzarella, and basil",
+      "category": "Salad",
+      "image": "https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg",
+      "ingredients": [
+        "tomatoes",
+        "mozzarella",
+        "basil",
+        "balsamic glaze",
+        "olive oil"
+      ],
+      "instructions": [
+        "Slice tomatoes and mozzarella",
+        "Arrange alternating slices",
+        "Tuck basil leaves between",
+        "Drizzle with balsamic and oil"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 29,
+      "isPublic": true
+    },
+    {
+      "id": "24",
+      "title": "Blueberry Muffins",
+      "description": "Soft muffins bursting with blueberries",
+      "category": "Baking",
+      "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+      "ingredients": [
+        "flour",
+        "blueberries",
+        "sugar",
+        "butter",
+        "eggs"
+      ],
+      "instructions": [
+        "Mix dry ingredients",
+        "Cream butter and sugar, add eggs",
+        "Fold in blueberries",
+        "Bake at 375F for 20 minutes"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 8,
+      "isPublic": true
+    },
+    {
+      "id": "25",
+      "title": "Pad Thai",
+      "description": "Classic Thai stir-fried noodles",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1414234/pexels-photo-1414234.jpeg",
+      "ingredients": [
+        "rice noodles",
+        "shrimp",
+        "peanuts",
+        "bean sprouts",
+        "tamarind sauce"
+      ],
+      "instructions": [
+        "Soak rice noodles",
+        "Stir-fry shrimp and noodles",
+        "Add tamarind sauce and sprouts",
+        "Top with crushed peanuts"
+      ],
+      "userId": "pL5kR8mNqWs",
+      "likeCount": 5,
+      "isPublic": true
+    },
+    {
+      "id": "26",
+      "title": "Deviled Eggs",
+      "description": "Classic party appetizer with creamy filling",
+      "category": "Appetizer",
+      "image": "https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg",
+      "ingredients": [
+        "eggs",
+        "mayonnaise",
+        "mustard",
+        "paprika",
+        "chives"
+      ],
+      "instructions": [
+        "Boil and halve the eggs",
+        "Mash yolks with mayo and mustard",
+        "Pipe filling back into whites",
+        "Garnish with paprika and chives"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 18,
+      "isPublic": true
+    },
+    {
+      "id": "27",
+      "title": "Zucchini Noodles",
+      "description": "Light low-carb pasta alternative",
+      "category": "Vegan",
+      "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
+      "ingredients": [
+        "zucchini",
+        "cherry tomatoes",
+        "basil pesto",
+        "pine nuts",
+        "olive oil"
+      ],
+      "instructions": [
+        "Spiralize the zucchini",
+        "Saute briefly in olive oil",
+        "Toss with pesto and tomatoes",
+        "Top with pine nuts"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 23,
+      "isPublic": true
+    },
+    {
+      "id": "28",
+      "title": "Buffalo Cauliflower",
+      "description": "Spicy roasted cauliflower bites",
+      "category": "Snack",
+      "image": "https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg",
+      "ingredients": [
+        "cauliflower",
+        "buffalo sauce",
+        "flour",
+        "garlic powder",
+        "ranch dressing"
+      ],
+      "instructions": [
+        "Coat cauliflower in batter",
+        "Bake until crispy",
+        "Toss in buffalo sauce",
+        "Serve with ranch dressing"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 12,
+      "isPublic": true
+    },
+    {
+      "id": "29",
+      "title": "Pumpkin Soup",
+      "description": "Silky autumn soup with warm spices",
+      "category": "Soup",
+      "image": "https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg",
+      "ingredients": [
+        "pumpkin",
+        "vegetable stock",
+        "cream",
+        "nutmeg",
+        "onion"
+      ],
+      "instructions": [
+        "Saute onion until soft",
+        "Add pumpkin and stock",
+        "Simmer until tender then blend",
+        "Stir in cream and nutmeg"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 2,
+      "isPublic": true
+    },
+    {
+      "id": "30",
+      "title": "Falafel Wrap",
+      "description": "Crispy chickpea falafel in warm pita",
+      "category": "Lunch",
+      "image": "https://images.pexels.com/photos/1352270/pexels-photo-1352270.jpeg",
+      "ingredients": [
+        "chickpeas",
+        "pita bread",
+        "tahini sauce",
+        "lettuce",
+        "cucumber"
+      ],
+      "instructions": [
+        "Blend chickpeas with spices",
+        "Form and fry falafel balls",
+        "Warm the pita bread",
+        "Fill with falafel and vegetables"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 18,
+      "isPublic": true
+    },
+    {
+      "id": "32",
+      "title": "Teriyaki Salmon Bowl",
+      "description": "Rice bowl with glazed salmon",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1660030/pexels-photo-1660030.jpeg",
+      "ingredients": [
+        "salmon",
+        "rice",
+        "teriyaki sauce",
+        "edamame",
+        "sesame seeds"
+      ],
+      "instructions": [
+        "Cook rice according to package",
+        "Sear salmon and glaze with sauce",
+        "Steam the edamame",
+        "Assemble bowl and top with sesame seeds"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 24,
+      "isPublic": true
+    },
+    {
+      "id": "33",
+      "title": "Chicken Noodle Soup",
+      "description": "Comforting classic soup for any season",
+      "category": "Soup",
+      "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+      "ingredients": [
+        "chicken breast",
+        "egg noodles",
+        "carrots",
+        "celery",
+        "chicken broth"
+      ],
+      "instructions": [
+        "Simmer chicken in broth until cooked",
+        "Shred chicken and set aside",
+        "Add vegetables and noodles to broth",
+        "Return chicken to pot and simmer"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 29,
+      "isPublic": true
+    },
+    {
+      "id": "34",
+      "title": "Overnight Oats",
+      "description": "Make-ahead breakfast with oats and fruit",
+      "category": "Breakfast",
+      "image": "https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg",
+      "ingredients": [
+        "rolled oats",
+        "milk",
+        "chia seeds",
+        "honey",
+        "mixed berries"
+      ],
+      "instructions": [
+        "Combine oats, milk, and chia seeds",
+        "Stir in honey",
+        "Refrigerate overnight",
+        "Top with berries before eating"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 10,
+      "isPublic": true
+    },
+    {
+      "id": "35",
+      "title": "BBQ Pulled Pork",
+      "description": "Slow-cooked pork with smoky barbecue sauce",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg",
+      "ingredients": [
+        "pork shoulder",
+        "bbq sauce",
+        "buns",
+        "coleslaw",
+        "brown sugar"
+      ],
+      "instructions": [
+        "Rub pork with spices and sugar",
+        "Slow cook until tender",
+        "Shred pork with forks",
+        "Toss with bbq sauce and serve on buns"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 22,
+      "isPublic": true
+    },
+    {
+      "id": "36",
+      "title": "Guacamole",
+      "description": "Fresh and zesty avocado dip",
+      "category": "Snack",
+      "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      "ingredients": [
+        "avocado",
+        "lime juice",
+        "onion",
+        "cilantro",
+        "tomato"
+      ],
+      "instructions": [
+        "Mash the avocados",
+        "Mix in lime juice and onion",
+        "Fold in tomato and cilantro",
+        "Season to taste"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 42,
+      "isPublic": true
+    },
+    {
+      "id": "37",
+      "title": "Eggplant Parmesan",
+      "description": "Baked eggplant layered with cheese and sauce",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/66643/pexels-photo-66643.jpeg",
+      "ingredients": [
+        "eggplant",
+        "marinara sauce",
+        "mozzarella",
+        "parmesan",
+        "breadcrumbs"
+      ],
+      "instructions": [
+        "Bread and bake eggplant slices",
+        "Layer with sauce and cheese",
+        "Repeat layers",
+        "Bake until bubbly and golden"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 44,
+      "isPublic": true
+    },
+    {
+      "id": "38",
+      "title": "Fruit Salad",
+      "description": "Refreshing mix of seasonal fruits",
+      "category": "Snack",
+      "image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "ingredients": [
+        "strawberries",
+        "pineapple",
+        "grapes",
+        "kiwi",
+        "mint"
+      ],
+      "instructions": [
+        "Chop all the fruit",
+        "Combine in a large bowl",
+        "Toss gently to mix",
+        "Garnish with fresh mint"
+      ],
+      "userId": "wn33gO87dBQ",
+      "likeCount": 38,
+      "isPublic": true
+    },
+    {
+      "id": "39",
+      "title": "Beef Stroganoff",
+      "description": "Creamy beef and mushroom pasta dish",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/1132558/pexels-photo-1132558.jpeg",
+      "ingredients": [
+        "beef strips",
+        "mushrooms",
+        "sour cream",
+        "egg noodles",
+        "onion"
+      ],
+      "instructions": [
+        "Brown beef strips and set aside",
+        "Saute mushrooms and onion",
+        "Stir in sour cream",
+        "Combine with beef and noodles"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 34,
+      "isPublic": true
+    },
+    {
+      "id": "40",
+      "title": "Cornbread",
+      "description": "Sweet and crumbly Southern-style cornbread",
+      "category": "Baking",
+      "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg",
+      "ingredients": [
+        "cornmeal",
+        "flour",
+        "buttermilk",
+        "eggs",
+        "honey"
+      ],
+      "instructions": [
+        "Mix dry ingredients",
+        "Whisk in buttermilk and eggs",
+        "Pour into greased pan",
+        "Bake at 400F for 20 minutes"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 10,
+      "isPublic": true
+    },
+    {
+      "id": "41",
+      "title": "Miso Soup",
+      "description": "Traditional Japanese soup with tofu and seaweed",
+      "category": "Soup",
+      "image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "ingredients": [
+        "miso paste",
+        "tofu",
+        "seaweed",
+        "green onion",
+        "dashi stock"
+      ],
+      "instructions": [
+        "Heat dashi stock",
+        "Dissolve miso paste into stock",
+        "Add tofu and seaweed",
+        "Garnish with green onion"
+      ],
+      "userId": "pL5kR8mNqWs",
+      "likeCount": 24,
+      "isPublic": true
+    },
+    {
+      "id": "42",
+      "title": "Chicken Fajitas",
+      "description": "Sizzling peppers and chicken in tortillas",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/806457/pexels-photo-806457.jpeg",
+      "ingredients": [
+        "chicken breast",
+        "bell peppers",
+        "onion",
+        "tortillas",
+        "fajita seasoning"
+      ],
+      "instructions": [
+        "Slice chicken and vegetables",
+        "Season and cook chicken",
+        "Saute peppers and onion",
+        "Serve with warm tortillas"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 40,
+      "isPublic": true
+    },
+    {
+      "id": "43",
+      "title": "Rice Pudding",
+      "description": "Creamy sweet rice dessert with cinnamon",
+      "category": "Dessert",
+      "image": "https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg",
+      "ingredients": [
+        "rice",
+        "milk",
+        "sugar",
+        "cinnamon",
+        "vanilla extract"
+      ],
+      "instructions": [
+        "Cook rice in milk until tender",
+        "Stir in sugar and vanilla",
+        "Simmer until creamy",
+        "Sprinkle with cinnamon before serving"
+      ],
+      "userId": "hG4vT1sYzXo",
+      "likeCount": 14,
+      "isPublic": true
+    },
+    {
+      "id": "44",
+      "title": "Quinoa Salad",
+      "description": "Protein-packed salad with fresh vegetables",
+      "category": "Salad",
+      "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg",
+      "ingredients": [
+        "quinoa",
+        "cucumber",
+        "cherry tomatoes",
+        "feta cheese",
+        "lemon"
+      ],
+      "instructions": [
+        "Cook and cool the quinoa",
+        "Chop cucumber and tomatoes",
+        "Toss all ingredients together",
+        "Dress with lemon and olive oil"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 3,
+      "isPublic": true
+    },
+    {
+      "id": "45",
+      "title": "Clam Chowder",
+      "description": "Creamy New England style seafood soup",
+      "category": "Soup",
+      "image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "ingredients": [
+        "clams",
+        "potatoes",
+        "cream",
+        "bacon",
+        "onion"
+      ],
+      "instructions": [
+        "Cook bacon until crisp",
+        "Saute onion in bacon fat",
+        "Add potatoes and clam juice",
+        "Stir in cream and clams"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 2,
+      "isPublic": true
+    },
+    {
+      "id": "46",
+      "title": "Veggie Burger",
+      "description": "Plant-based burger with fresh toppings",
+      "category": "Vegan",
+      "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      "ingredients": [
+        "black beans",
+        "breadcrumbs",
+        "burger buns",
+        "lettuce",
+        "tomato"
+      ],
+      "instructions": [
+        "Mash black beans with breadcrumbs",
+        "Form into patties",
+        "Pan-fry until crisp",
+        "Assemble burger with toppings"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 25,
+      "isPublic": true
+    },
+    {
+      "id": "47",
+      "title": "Tiramisu",
+      "description": "Classic Italian coffee-flavored dessert",
+      "category": "Dessert",
+      "image": "https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg",
+      "ingredients": [
+        "ladyfingers",
+        "mascarpone",
+        "espresso",
+        "cocoa powder",
+        "eggs"
+      ],
+      "instructions": [
+        "Dip ladyfingers in espresso",
+        "Layer with mascarpone mixture",
+        "Repeat layers",
+        "Dust with cocoa powder and chill"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 4,
+      "isPublic": true
+    },
+    {
+      "id": "48",
+      "title": "Baked Ziti",
+      "description": "Cheesy baked pasta with marinara",
+      "category": "Dinner",
+      "image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "ingredients": [
+        "ziti pasta",
+        "marinara sauce",
+        "ricotta",
+        "mozzarella",
+        "basil"
+      ],
+      "instructions": [
+        "Cook pasta until al dente",
+        "Mix with sauce and ricotta",
+        "Pour into baking dish topped with mozzarella",
+        "Bake until bubbly"
+      ],
+      "userId": "xR2pLk9vQmZ",
+      "likeCount": 36,
+      "isPublic": true
+    },
+    {
+      "id": "49",
+      "title": "Chicken Quesadilla",
+      "description": "Cheesy tortillas filled with chicken",
+      "category": "Lunch",
+      "image": "https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg",
+      "ingredients": [
+        "tortillas",
+        "chicken breast",
+        "cheese",
+        "bell peppers",
+        "sour cream"
+      ],
+      "instructions": [
+        "Cook and shred chicken",
+        "Fill tortilla with chicken and cheese",
+        "Cook until golden and crispy",
+        "Slice and serve with sour cream"
+      ],
+      "userId": "aT7yUj3nBcE",
+      "likeCount": 13,
+      "isPublic": true
+    },
+    {
+      "id": "50",
+      "title": "Carrot Cake",
+      "description": "Moist spiced cake with cream cheese frosting",
+      "category": "Dessert",
+      "image": "https://images.pexels.com/photos/1152237/pexels-photo-1152237.jpeg",
+      "ingredients": [
+        "carrots",
+        "flour",
+        "cream cheese",
+        "walnuts",
+        "cinnamon"
+      ],
+      "instructions": [
+        "Grate carrots and mix batter",
+        "Fold in walnuts",
+        "Bake at 350F until done",
+        "Frost with cream cheese icing"
+      ],
+      "userId": "pL5kR8mNqWs",
+      "likeCount": 25,
+      "isPublic": true
+    },
+    {
+      "title": "Noodles with Egg",
+      "description": "Testy",
+      "category": "Lunch",
+      "ingredients": [
+        "Noodles",
+        "Eggs",
+        "Water"
+      ],
+      "instructions": [
+        "Boil water",
+        "Boil Eggs",
+        "Add noodles to hot water and cook for 2-4min",
+        "Don't overcook the noodles and undercook the eggs :)",
+        "serve them together",
+        "Enjoy"
+      ],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXiHF6fhAl_aPl8-g5lC71o0PePho8g9TlZjTl_uLs3w&s=10",
+      "isPublic": true,
+      "userId": "wn33gO87dBQ",
+      "likeCount": 0,
+      "id": "ey53b-TDKDw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

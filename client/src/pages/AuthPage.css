@@ -1,0 +1,129 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image:
+    linear-gradient(rgba(10, 10, 10, 0.55), rgba(10, 10, 10, 0.55)),
+    url('../assets/images/auth-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  padding: var(--space-4);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: var(--space-5) var(--space-4);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: auth-rise 0.5s ease;
+}
+
+@keyframes auth-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-card h1 {
+  font-family: var(--font-display);
+  color: white;
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.auth-card label {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: var(--space-1);
+}
+
+.auth-card input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  color: white;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-3);
+  transition: all 0.2s ease;
+}
+
+.auth-card input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.18);
+  transform: scale(1.03);
+}
+
+.auth-card button[type="submit"] {
+  width: 100%;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-3);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: var(--space-2);
+  transition: all 0.2s ease;
+}
+
+.auth-card button[type="submit"]:hover {
+  background: var(--accent, var(--accent));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 199, 78, 0.4);
+}
+
+
+.auth-card .error-msg {
+  background: none;
+  border: none;
+  color: #FFD166;
+  padding: var(--space-1) 0;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.auth-switch,
+.auth-later {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  margin-top: var(--space-2);
+}
+
+.auth-switch a,
+.auth-later a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-switch a:hover,
+.auth-later a:hover {
+  text-decoration: underline;
+}

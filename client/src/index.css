@@ -1,0 +1,47 @@
+:root {
+  --bg: #FFFFFF;
+  --surface: #F5F5F7;
+  --text: #1A1A1A;
+  --text-muted: #6B6B70;
+  --accent: #F59E0B;
+  --accent-dark: #F97316;
+  --success: #00C2A8;
+  --danger: #E63946;
+  --border: #E5E5EA;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0 0 var(--space-2) 0;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
