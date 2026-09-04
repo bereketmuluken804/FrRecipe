@@ -15,7 +15,7 @@ export default async function sendEmail(to, subject, verifylink) {
 									<p style="color: #444; line-height: 1.6;">
 										Thanks for signing up to FrRecipes! Click the button below to verify your email and activate your account.
 									</p>
-									<a href="${verifylink}" style="display: inline-block; background: #a7ff4e; color: white; text-decoration: none; padding: 12px 24px; border-radius: 999px; font-weight: 600; margin: 16px 0;">
+									<a href="${verifylink}" style="display: inline-block; background: #61f547; color: white; text-decoration: none; padding: 12px 24px; border-radius: 999px; font-weight: 600; margin: 16px 0;">
 										Verify My Account
 									</a>
 									<p style="color: #888; font-size: 0.85rem; line-height: 1.5;">

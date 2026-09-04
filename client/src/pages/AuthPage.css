@@ -76,7 +76,7 @@
   transform: scale(1.03);
 }
 
-.auth-card button[type="submit"] {
+.auth-card button {
   width: 100%;
   background: var(--accent);
   border: none;
@@ -108,12 +108,27 @@
   text-align: center;
 }
 
+.auth-card .success-msg {
+  background: none;
+  border: none;
+  color: #00C2A8;
+  padding: var(--space-1) 0;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
 .auth-switch,
 .auth-later {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.85rem;
   margin-top: var(--space-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  
 }
 
 .auth-switch a,

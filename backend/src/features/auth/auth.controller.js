@@ -18,6 +18,7 @@ export async function register(req, res, next) {
 			message: "Bad Request: missing name, email or password ",
 		});
 	}
+	
 	try {
 		const exists = await User.findOne({ email });
 		if (exists) {

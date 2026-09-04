@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/authService";
 import "./AuthPage.css";
 import GoogleLoginButton from "../components/GoogleLoginButton";
+import { SquareArrowOutUpRight } from 'lucide-react';
+
 function LoginPage() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -27,7 +29,6 @@ function LoginPage() {
 				return;
 			}
 			const userData = await loginUser({ email, password });
-			console.log(userData);
 			login(userData);
 			navigate("/");
 		} catch (err) {
@@ -73,7 +74,7 @@ function LoginPage() {
 					Don't have an account? <Link to="/register">Register</Link>
 				</p>
 				<p className="auth-later">
-					<Link to="/">Continue without an account →</Link>
+					<Link to="/" className="auth-later">Continue without an account <SquareArrowOutUpRight style={{width: "15px", height: "15px"}}/></Link>
 				</p>
 			</div>
 		</div>

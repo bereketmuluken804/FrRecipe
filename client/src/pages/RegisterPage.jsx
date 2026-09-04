@@ -14,13 +14,13 @@ function RegisterPage() {
 		confirmPassword: "",
 	});
 	const [error, setError] = useState(null);
-	const { login } = useAuth();
+	const [successMessage, setSuccessMessage] = useState(null);
+	const [loading, setLoading] = useState(false);
 	const navigate = useNavigate();
 
 	function handleChange(e) {
 		const inputName = e.target.name;
 		const value = e.target.value;
-
 		SetFormData({ ...formData, [inputName]: value });
 	}
 
@@ -36,64 +36,91 @@ function RegisterPage() {
 			return;
 		}
 
+		setLoading(true);
 		try {
-			const userData = await registerUser({ name, email, password });
-			login(userData);
-			navigate("/");
+			const response = await registerUser({ name, email, password });
+			setSuccessMessage(response.message);
+			setError(null);
 		} catch (err) {
 			setError(err.message);
+		} finally {
+			setLoading(false);
 		}
 	}
+
 	return (
 		<div className="auth-page">
 			<div className="auth-card">
 				<h1>Join Us</h1>
+
 				{error && <p className="error-msg">{error}</p>}
-				<form onSubmit={handleSubmit}>
-					<label htmlFor="">Name </label>
-					<input
-						type="text"
-						onChange={handleChange}
-						value={formData.name}
-						id="name"
-						name="name"
-					/>
-					<br />
-					<label htmlFor="">Email</label>
-					<input
-						type="text"
-						onChange={handleChange}
-						value={formData.email}
-						id="email"
-						name="email"
-					/>
-					<br />
-					<label htmlFor="">Password</label>
-					<input
-						type="password"
-						onChange={handleChange}
-						value={formData.password}
-						id="password"
-						name="password"
-					/>
-					<br />
-					<label htmlFor="">Confirm Password</label>
-					<input
-						type="password"
-						onChange={handleChange}
-						value={formData.confirmPassword}
-						id="confirmPassword"
-						name="confirmPassword"
-					/>
-					<br />
-					<button type="submit">Register</button>
-				</form>
-				<div style={{display: "", justifyContent: "center", padding: "5px"}}>
-					<GoogleLoginButton />
-				</div>
+
+				{successMessage ? (
+					<div className="success-state">
+						<p className="success-msg">{successMessage}</p>
+						<button
+							className="btn-primary"
+							onClick={() => navigate("/login")}
+						>
+							Login
+						</button>
+					</div>
+				) : (
+					<>
+						<form onSubmit={handleSubmit}>
+							<label htmlFor="name">Name</label>
+							<input
+								type="text"
+								onChange={handleChange}
+								value={formData.name}
+								id="name"
+								name="name"
+								disabled={loading}
+							/>
+							<br />
+							<label htmlFor="email">Email</label>
+							<input
+								type="text"
+								onChange={handleChange}
+								value={formData.email}
+								id="email"
+								name="email"
+								disabled={loading}
+							/>
+							<br />
+							<label htmlFor="password">Password</label>
+							<input
+								type="password"
+								onChange={handleChange}
+								value={formData.password}
+								id="password"
+								name="password"
+								disabled={loading}
+							/>
+							<br />
+							<label htmlFor="confirmPassword">Confirm Password</label>
+							<input
+								type="password"
+								onChange={handleChange}
+								value={formData.confirmPassword}
+								id="confirmPassword"
+								name="confirmPassword"
+								disabled={loading}
+							/>
+							<br />
+							<button type="submit" disabled={loading}>
+								{loading ? "Registering..." : "Register"}
+							</button>
+						</form>
+						<div style={{padding: "5px" }}>
+							<GoogleLoginButton />
+						</div>
+
 				<p className="auth-switch">
 					Already have an account? <Link to="/login">Login</Link>
 				</p>
+					</>
+				)}
 				<p className="auth-later">
 					<Link to="/">Continue without an account</Link>
 				</p>
