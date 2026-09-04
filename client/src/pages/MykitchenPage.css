@@ -36,11 +36,20 @@
 
 #new-recipe {
 	background-color: var(--success);
-  color: white;
+	color: white;
 }
 
 #new-recipe:hover {
-  background-color:white;
-  color:  var(--success);
+	background-color: white;
+	color: var(--success);
 	border-color: var(--success);
+}
+
+@media screen and (max-width: 500px) {
+	.tabs button{
+		font-weight: 500;
+		font-size: 0.7rem;
+		padding: var(--space-1) var(--space-2);
+	}
+	
 }

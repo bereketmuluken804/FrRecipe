@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--text); 
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: var(--space-3) var(--space-5);
+  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
 }
 
 .navbar .brand {
@@ -11,6 +12,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .navbar ul {
@@ -23,30 +25,52 @@
 }
 
 .navbar a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 0.9rem;
   padding: var(--space-1) var(--space-3);
-  transition: all 0.15s ease,  transform 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
+  position: relative;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .navbar a:hover {
-  color: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.navbar a:hover::after {
+  width: 80%;
 }
 
 .navbar a.active {
-  color: var(--accent);
-  border-bottom: solid 1px var(--accent) ;
-  transform: translateY(-2px) scale(1.05);
+  color: white;
+  font-weight: 600;
+}
 
+.navbar a.active::after {
+  width: 100%;
+  background: white;
 }
 
 .navbar button {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: white;
   padding: var(--space-1) var(--space-3);
   border-radius: 999px;
@@ -54,11 +78,125 @@
   font-weight: 500;
   font-size: 0.9rem;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(4px);
 }
 
 .navbar button:hover {
-  background-color: var(--danger);
-  border-color: var(--danger);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+.nav-mobile {
+  position: fixed;
+  top: var(--navbar-height);
+  right: 0;
+  height: calc(100vh - var(--navbar-height));
+  width: 240px;
+  background: linear-gradient(180deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.98) 100%);
+  backdrop-filter: blur(16px);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  z-index: 101;
+  box-shadow: -4px 0 24px rgba(102, 126, 234, 0.3);
+  animation: slide-in 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.nav-mobile a,
+.nav-mobile button {
+  display: block;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: var(--space-3) var(--space-2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.nav-mobile a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: white;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+}
+
+.nav-mobile a:hover {
+  color: white;
+  padding-left: var(--space-3);
+}
+
+.nav-mobile a:hover::after {
+  width: 100%;
+}
+
+.nav-mobile a.active {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-mobile a.active::after {
+  width: 100%;
+}
+
+.nav-mobile button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(4px);
+}
+
+.nav-backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  z-index: 100;
+  top: var(--navbar-height);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  animation: fade-in 0.2s ease;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 600px){
+  
+  .hamburger {
+    display: block;
+  }
+
+  #nav-desktop {
+    display: none;
+  }
+}
+
+

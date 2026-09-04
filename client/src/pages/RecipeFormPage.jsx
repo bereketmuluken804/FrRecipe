@@ -126,7 +126,7 @@ function RecipeFormPage() {
 	return (
 		<div className="recipe-form-page">
 			<Link to="/my-kitchen" className="back-link">
-				← Back to My Kitchen
+				← Kitchen
 			</Link>
 			{!!id ? <h1>Edit Recipe</h1> : <h1>Add Recipe</h1>}
 			<form onSubmit={handleSubmit} className="recipe-form">
@@ -292,7 +292,6 @@ function RecipeFormPage() {
 					{!id && <button
 						type="button"
 						className="btn-secondary"
-						type="button"
 						onClick={clearForm}
 					>
 						Clear

@@ -8,7 +8,8 @@
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "build": "npm run build --prefix client",
     "dev:client": "npm run dev --prefix client",
-    "dev:server": "npm run dev --prefix server",
+    "dev:server": "npm run dev --prefix backend",
+    "dev:json": "npm run dev --prefix server",
     "start": "NODE_ENV=production npm start --prefix server"
   },
   "keywords": [],

@@ -47,7 +47,12 @@
       "name": "betyy",
       "email": "b@gmail.com",
       "password": "123",
-      "favoriteRecipes": [],
+      "favoriteRecipes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "likedRecipes": [],
       "id": "Gmc0jhkP7X4"
     }
