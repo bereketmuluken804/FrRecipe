@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { registerUser } from "../services/authService";
 import { Link } from "react-router-dom";
 import "./AuthPage.css";
+import GoogleLoginButton from "../components/GoogleLoginButton";
 
 function RegisterPage() {
 	const [formData, SetFormData] = useState({
@@ -87,11 +88,14 @@ function RegisterPage() {
 					<br />
 					<button type="submit">Register</button>
 				</form>
+				<div style={{display: "", justifyContent: "center", padding: "5px"}}>
+					<GoogleLoginButton />
+				</div>
 				<p className="auth-switch">
 					Already have an account? <Link to="/login">Login</Link>
 				</p>
 				<p className="auth-later">
-					<Link to="/">Continue without an account →</Link>
+					<Link to="/">Continue without an account</Link>
 				</p>
 			</div>
 		</div>

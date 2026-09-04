@@ -4,8 +4,13 @@ import ConnectDB from "./config/db.js";
 import { PORT } from "./utils/config.js";
 import errorMiddleware from "./middleware/errorMiddleware.js";
 import authRouter from "./features/auth/auth.route.js";
-
+import dns from "dns";
+dns.setDefaultResultOrder("ipv4first");
 const app = express();
+app.use((req, res, next) => {
+	res.setHeader("Cross-Origin-Opener-Policy", "same-origin-allow-popups");
+	next();
+});
 app.use(cors());
 app.use(express.json());
 
