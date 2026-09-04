@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/authService";
 import "./AuthPage.css";
+import GoogleLoginButton from "../components/GoogleLoginButton";
 function LoginPage() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -59,6 +60,15 @@ function LoginPage() {
 					<br />
 					<button type="submit">Login</button>
 				</form>
+				<div
+					style={{
+						display: "",
+						justifyContent: "center",
+						padding: "5px",
+					}}
+				>
+					<GoogleLoginButton />
+				</div>
 				<p className="auth-switch">
 					Don't have an account? <Link to="/register">Register</Link>
 				</p>

@@ -1,7 +1,9 @@
 import { GoogleLogin } from "@react-oauth/google";
+import { useAuth } from "../context/AuthContext";
 const BaseAPI = import.meta.env.VITE_API_ENDPOINT;
 
 export default function GoogleLoginButton({}) {
+	const { login } = useAuth();
 	const handleSuccess = async (credentialResponse) => {
 		try {
 			const res = await fetch(`${BaseAPI}/api/auth/google`, {
@@ -20,7 +22,8 @@ export default function GoogleLoginButton({}) {
 				throw new Error(data.error || "Authentication failed");
 			}
 
-			console.log("Login successful:", data);
+			login(data)
+      console.log("Login successful:", data);
 		} catch (error) {
 			console.error("Google Sing-In Error", error.message);
 		}
