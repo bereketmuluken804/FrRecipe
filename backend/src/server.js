@@ -5,8 +5,7 @@ import { PORT } from "./utils/config.js";
 import errorMiddleware from "./middleware/errorMiddleware.js";
 import authRouter from "./features/auth/auth.route.js";
 import dns from "dns";
-dns.setServers(['8.8.8.8', '8.8.4.4']);
-dns.setDefaultResultOrder("ipv4first");
+import recipeRouter from "./features/recipes/recipe.route.js";
 
 const app = express();
 app.use((req, res, next) => {
@@ -16,8 +15,8 @@ app.use((req, res, next) => {
 app.use(cors());
 app.use(express.json());
 
-app.use("/api", authRouter);
-
+app.use("/api/auth", authRouter);
+app.use("/api/recipes", recipeRouter)
 app.use((req, res, next) => {
 	const error = new Error(`Not Found - ${req.originalUrl}`);
 	res.status(404);

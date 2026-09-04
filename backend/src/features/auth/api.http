@@ -1,0 +1,43 @@
+@baseUrl = http://localhost:3002
+
+@ct = application/json
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhOWIzNzk1OGIwMzc1ZGU0MDM5Y2ZiYyIsImlhdCI6MTc4ODU1NzI3MiwiZXhwIjoxNzg5MTYyMDcyfQ.XS6cYO7RNJ4t45sF5nlw0lP21UeSHAYFkLHoBKVAr_8
+POST {{baseUrl}}/api/auth/register
+Content-Type: {{ct}}
+
+{
+  "name" : "bereket",
+  "email" : "bereketmuluken0@gmail.com",
+  "password" : "123"
+}
+
+###
+POST {{baseUrl}}/api/auth/login
+Content-Type: {{ct}}
+
+{
+  "email" : "bereketmuluken0@gmail.com",
+  "password" : "123"
+}
+
+###
+POST {{baseUrl}}/api/recipes
+Authorization: Bearer {{token}}
+Content-Type: {{ct}}
+
+{
+  "title": "TEST 1",
+		"description": "soemti",
+		"category": "casome",
+		"ingredients": ["asdf", "dfa"],
+		"instructions": ["fes", "fsef"],
+		"image": "kjnk",
+		"isPublic": false
+}
+###
+GET {{baseUrl}}/api/recipes/6a9b3a3a91f94b053bd1a342
+
+###
+DELETE {{baseUrl}}/api/recipes/6a9b3a3a91f94b053bd1a342
+Authorization: Bearer {{token}}
+Content-Type: {{ct}}

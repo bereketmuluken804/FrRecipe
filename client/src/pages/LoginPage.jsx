@@ -4,12 +4,15 @@ import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/authService";
 import "./AuthPage.css";
 import GoogleLoginButton from "../components/GoogleLoginButton";
-import { SquareArrowOutUpRight } from 'lucide-react';
+import { SquareArrowOutUpRight } from "lucide-react";
+import { Loader2 } from "lucide-react";
+
 
 function LoginPage() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState(null);
+	const [loading, setLoading] = useState(false);
 	const { login } = useAuth();
 	const navigate = useNavigate();
 
@@ -23,16 +26,21 @@ function LoginPage() {
 	}
 	async function handleSubmit(e) {
 		e.preventDefault();
+
 		try {
 			if (!(email && password)) {
 				setError("Please fill all the fields");
 				return;
 			}
+			setLoading(true);
 			const userData = await loginUser({ email, password });
+			console.log(userData);
 			login(userData);
 			navigate("/");
 		} catch (err) {
 			setError(err.message);
+		} finally {
+			setLoading(false);
 		}
 	}
 	return (
@@ -59,7 +67,20 @@ function LoginPage() {
 						id="password"
 					/>
 					<br />
-					<button type="submit">Login</button>
+					<button
+						type="submit"
+						className="login-btn"
+						disabled={loading}
+					>
+						{loading ? (
+							<>
+								<Loader2 className="spinner" size={18} />
+								
+							</>
+						) : (
+							"Login"
+						)}
+					</button>
 				</form>
 				<div
 					style={{
@@ -74,7 +95,12 @@ function LoginPage() {
 					Don't have an account? <Link to="/register">Register</Link>
 				</p>
 				<p className="auth-later">
-					<Link to="/" className="auth-later">Continue without an account <SquareArrowOutUpRight style={{width: "15px", height: "15px"}}/></Link>
+					<Link to="/" className="auth-later">
+						Continue without an account{" "}
+						<SquareArrowOutUpRight
+							style={{ width: "15px", height: "15px" }}
+						/>
+					</Link>
 				</p>
 			</div>
 		</div>
