@@ -16,12 +16,12 @@ export default async function authMiddleware(req, res, next) {
     
 		const user = await User.findById(decoded.id );
 		
-    if (!user?.id) {
+    if (!user.id) {
       return res.status(401).json({
         message: "Unauthorized: invalid token",
 			});
 		}
-		req.user = user;
+		req.user = user;		
 		next()
 	} catch (err) {
 		next(err);

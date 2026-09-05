@@ -16,9 +16,7 @@ function PublicRecipesPage() {
 		async function loadRecipes() {
 			try {
 				const response = await getAllRecipes();
-				setRecipes(
-					response.filter((recipe) => recipe.isPublic === true),
-				);
+				setRecipes(response);
 			} catch (err) {
 				setError("Failed to load recipes");
 			}

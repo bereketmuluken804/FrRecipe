@@ -18,7 +18,7 @@ function RecipeDetailsPage() {
 		loadRecipe(id);
 	}, [id]);
 	if (!recipe) {
-		return <>{(error && <p>{error}</p>) || <p>loading ...</p>}</>;
+		return <>{(error && <p>{error}</p>) || <p style={{display: "block", textAlign: "center"}}>loading ...</p>}</>;
 	}
 	return (
 		<div className="recipe-detail">

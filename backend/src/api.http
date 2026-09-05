@@ -35,9 +35,28 @@ Content-Type: {{ct}}
 		"isPublic": false
 }
 ###
-GET {{baseUrl}}/api/recipes/6a9b3a3a91f94b053bd1a342
+GET {{baseUrl}}/api/recipes
+
+
 
 ###
 DELETE {{baseUrl}}/api/recipes/6a9b3a3a91f94b053bd1a342
 Authorization: Bearer {{token}}
 Content-Type: {{ct}}
+
+###
+GET {{baseUrl}}/api/recipes/mine
+Authorization: Bearer {{token}}
+Content-Type: {{ct}}
+
+###
+POST {{baseUrl}}/api/recipes/6a9b2baf5f52448481465206/like
+Authorization: Bearer {{token}}
+
+###
+POST {{baseUrl}}/api/recipes/6a9b2baf5f52448481465206/favorite
+Authorization: Bearer {{token}}
+
+###
+GET {{baseUrl}}/api/recipes/favorites
+Authorization: Bearer {{token}}

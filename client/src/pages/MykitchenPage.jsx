@@ -4,13 +4,14 @@ import {
 	updateRecipe,
 	deleteRecipe,
 	toogleFavorite,
+	getMyRecipes,
 } from "../services/recipeService";
 import { toggleLike } from "../services/recipeService";
 import RecipeCard from "../components/RecipeCard";
 import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import "./MykitchenPage.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 function MykitchenPage() {
 	const [recipes, setRecipes] = useState([]);
@@ -23,16 +24,16 @@ function MykitchenPage() {
 	const { user, login } = useAuth();
 	useEffect(() => {
 		async function loadMyRecipes() {
-			try{
-				const all = await getAllRecipes();
-			const mine = all.filter((recipe) => recipe.userId === user.id);
-			const fav = all.filter((recipe) =>
-				user.favoriteRecipes.includes(recipe.id),
-			);
-			setRecipes(all);
-			setMyRecipes(mine);
-			setFavorites(fav);
-			}catch(err){
+			try {
+				const all = await getMyRecipes();
+				const mine = all.filter((recipe) => recipe.userId === user.id);
+				const fav = all.filter((recipe) =>
+					user.favoriteRecipes.includes(recipe.id),
+				);
+				setRecipes(all);
+				setMyRecipes(mine);
+				setFavorites(fav);
+			} catch (err) {
 				setError("Failed to load Recipes");
 			}
 		}
@@ -59,7 +60,7 @@ function MykitchenPage() {
 			),
 		);
 	}
-	
+
 	async function onDelete(id) {
 		const recipe = myRecipes.find((recipe) => recipe.id === id);
 		if (
@@ -104,13 +105,22 @@ function MykitchenPage() {
 				>
 					Favorites
 				</button>
-				<button id="new-recipe" onClick={()=>navigate('/my-kitchen/new')} >New Recipe +</button>
+				<button
+					id="new-recipe"
+					onClick={() => navigate("/my-kitchen/new")}
+				>
+					New Recipe +
+				</button>
 			</div>
-			
+
 			<div className="empty-state">
-				{toShow.length === 0 && activeTab === "mine" && !error &&  <p>Create your first recipe.</p>}
-				{toShow.length === 0 && activeTab === "favorites" && !error && <p>Favorited recipes will appear here.</p>}
-			
+				{toShow.length === 0 && activeTab === "mine" && !error && (
+					<p>Create your first recipe.</p>
+				)}
+				{toShow.length === 0 && activeTab === "favorites" && !error && (
+					<p>Favorited recipes will appear here.</p>
+				)}
+
 				{error && <p>{error}</p>}
 			</div>
 			<ul className="recipe-cont">
